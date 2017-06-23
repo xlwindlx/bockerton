@@ -15,12 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
-// function clickHandler(e)
-// {
-//     alert('thank you');
-// }
-//
-// $(document).bind('ready', function()
-// {
-//     $('#click_me').bind('click', clickHandler);
-// })
+function clickHandler(e)
+{
+    alert('thank you');
+}
+
+$(document).bind('ready', function()
+{
+    $('#click_me').bind('click', clickHandler);
+})
