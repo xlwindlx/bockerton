@@ -1,77 +1,80 @@
-<!--<div class="container">-->
 <%= content_tag :div, class:'container' do %>
-  <!--<header class="header">-->
   <%= content_tag :header, class:'header' do %>
-    <!--<h1 class="brand">Likelion Page</h1>-->
     <%= content_tag :h1, 'Likelion Page', class:'brand' %>
-    <!--<nav>-->
     <%= content_tag :nav do %>
-      <!--<h2 class="readable-hidden">Menu</h2>-->
       <%= content_tag :h2, 'Menu', class:'readable-hidden' %>
-      <!--<ul class="gnb">-->
       <%= content_tag :ul, class: 'gnb' do %>
-        <!--<li><a href="#home">Home</a></li>-->
         <%= content_tag :li, link_to('Home', '#home') %>
-        <!--<li><a href="#member">Member</a></li>-->
         <%= content_tag :li, link_to('Member', '#member') %>
-        <!--<li><a href="#when" >When</a></li>-->
         <%= content_tag :li, link_to('When', '#when') %>
-      <!--</ul>-->
       <% end %>
-    <!--</nav>-->
     <% end %>
-  <!--</header>-->
   <% end %>
-<!--</div>-->
 <% end %>
-<!--<section class="landing">-->
 <%= content_tag :section, class:'landing' do %>
-  <!--<h2 class="landing-title" id="home"> Hack your Life with LikeLion</h2>-->
   <%= content_tag :h2, 'Hack your Life with LikeLion', class: 'landing-title', id: 'home'%>
-  <!--<p class="landing-para">Stop giving up. You can do it. Do it! With us-->
-    <!--for sure. And our awesome team. We will help you achieve only high goals in a super cool way.-->
-  <!--</p>-->
   <%= content_tag :p, 'Stop giving up. You can do it. Do it! With us
     for sure. And our awesome team. We will help you achieve only high goals in a super cool way.', class: 'landing-para' %>
-  <!--<a class="btn-landing" role="button"  id="click_me" type="button" value="click me"> jquery</a>-->
   <%= link_to 'jquery test', nil, class: 'btn-landing', role: 'button', id:'click_me', type:'button', value:'click me' %>
-<!--</section>-->
 <% end %>
-<!--<div class="container">-->
 <%= content_tag :div, class:'container' do %>
-  <!--<section class="blog" id="member">-->
   <%= content_tag :section, class:'blog', id:'member' do %>
-    <!--<h2 class="readable-hidden">blog</h2>-->
     <%= content_tag :h2, 'blog', class:'readable-hidden' %>
-    <!--<article>-->
     <%= content_tag :article do %>
       <%=image_tag("1.jpeg") %>
-      <!--<p class="explain">팀원설명</p>-->
       <%= content_tag :p, '팀원설명', class: 'explain' %>
-    <!--</article>-->
     <% end %>
-    <!--<article>-->
     <%= content_tag :article do %>
       <%=image_tag("2.jpeg") %>
-      <!--<p class="explain">팀원설명</p>-->
       <%= content_tag :p, '팀원설명', class: 'explain' %>
-    <!--</article>-->
     <% end %>
-    <!--<article>-->
     <%= content_tag :article do %>
       <%=image_tag("3.jpeg") %>
-      <!--<p class="explain">팀원설명</p>-->
       <%= content_tag :p, '팀원설명', class: 'explain' %>
-    <!--</article>-->
     <% end %>
-  <!--</section>-->
   <% end %>
-<!--</div>-->
 <% end %>
-<!--<footer class="footer" id="when">-->
 <%=content_tag :footer, class:'footer', id:'when' do %>
-    <!--<p>2017-7-2 천안권 복커톤</p>-->
     <%= content_tag :p,'2017-7-2 천안권 복커톤', class:'explain' %>
     <%=image_tag 'https://d2hmp4n7p97ldw.cloudfront.net/assets/logo/likelion-white-a930fbcdf3042a50ba882ece9c02f43536971297a8e143e212d9b92d653bfa44.png', height: '30' %>
-<!--</footer>-->
 <% end %>
+
+<!--<div class="container">-->
+  <!--<header class="header">-->
+    <!--<h1 class="brand">Likelion Page</h1>-->
+    <!--<nav>-->
+      <!--<h2 class="readable-hidden">Menu</h2>-->
+      <!--<ul class="gnb">-->
+        <!--<li><a href="#home">Home</a></li>-->
+        <!--<li><a href="#member">Member</a></li>-->
+        <!--<li><a href="#when" >When</a></li>-->
+      <!--</ul>-->
+    <!--</nav>-->
+  <!--</header>-->
+<!--</div>-->
+
+<!--<section class="landing">-->
+  <!--<h2 class="landing-title" id="home"> Hack your Life with LikeLion</h2>-->
+  <!--<p class="landing-para">Stop giving up. You can do it. Do it! With us-->
+  <!--for sure. And our awesome team. We will help you achieve only high goals in a super cool way.-->
+  <!--</p>-->
+  <!--<a class="btn-landing" role="button"  id="click_me" type="button" value="click me"> jquery</a>-->
+<!--</section>-->
+<!--<div class="container">-->
+  <!--<section class="blog" id="member">-->
+  <!--<h2 class="readable-hidden">blog</h2>-->
+  <!--<article>-->
+    <!--<p class="explain">팀원설명</p>-->
+  <!--</article>-->
+  <!--<article>-->
+    <!--<p class="explain">팀원설명</p>-->
+  <!--</article>-->
+  <!--<article>-->
+    <!--<p class="explain">팀원설명</p>-->
+  <!--</article>-->
+  <!--</section>-->
+<!--</div>-->
+
+<!--<footer class="footer" id="when">-->
+  <!--<p>2017-7-2 천안권 복커톤</p>-->
+<!--</footer>-->

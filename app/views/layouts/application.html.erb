@@ -3,12 +3,23 @@
   <head>
     <title>Bockerton</title>
     <%= csrf_meta_tags %>
-    <!-- favicon link -->
+    <!-- favicon icon -->
     <%= favicon_link_tag 'https://d2hmp4n7p97ldw.cloudfront.net/assets/favicons/favicon-841c731d4bf227cdbfe4fe4245d7750b2c18c37f61810aa6100de9174db89e4f.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- 외부 JS파일 import -->
     <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' %>
+    <script>
+    function clickHandler(e)
+    {
+        alert('thank you');
+    }
+
+    $(document).bind('ready', function()
+    {
+        $('#click_me').bind('click', clickHandler);
+    })
+    </script>
   </head>
 
   <body>
