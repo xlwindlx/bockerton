@@ -9,6 +9,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- 외부 JS파일 import -->
     <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' %>
+    <script>
+      function clickHandler(e)
+      {
+          alert('thank you');
+      }
+
+      $(document).bind('ready', function()
+      {
+          $('#click_me').bind('click', clickHandler);
+      })
+    </script>
   </head>
 
   <body>
