@@ -10,15 +10,13 @@
     <!-- 외부 JS파일 import -->
     <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' %>
     <script>
-      function clickHandler(e)
-      {
-          alert('thank you');
-      }
+      clickHandler = (e) ->
+      alert 'thank you'
+      return
 
-      $(document).bind('ready', function()
-      {
-          $('#click_me').bind('click', clickHandler);
-      })
+      $(document).bind 'ready', ->
+        $('#click_me').bind 'click', clickHandler
+      return
     </script>
   </head>
 
